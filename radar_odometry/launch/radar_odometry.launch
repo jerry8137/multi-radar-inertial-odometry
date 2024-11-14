@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="project" default="radar_odometry" />
+
+  <!-- Parameters -->
+  <rosparam file="$(find radar_odometry)/config/params.yaml" command="load" />
+
+  <node pkg="$(arg project)" type="$(arg project)_radar_imu_fusion_node"
+    name="$(arg project)_radar_imu_fusion" output="screen" respawn="true" />
+  <node pkg="$(arg project)" type="$(arg project)_stack_point_node"
+    name="$(arg project)_stack_point" output="screen" respawn="true" />
+</launch>

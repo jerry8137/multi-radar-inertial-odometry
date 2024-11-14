@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="motion_segment_4d_front" pkg="motion_segment_4d" type="motion_segment_4d_node" output="screen">
+    <param name="mInputTopic" value="/ars548/radar_front/detections"/>
+    <param name="mVelocityThreshold" value="0.2"/>
+    <param name="mTimeOffset" value="0"/>
+  </node>
+
+  <node name="motion_segment_4d_rear" pkg="motion_segment_4d" type="motion_segment_4d_node" output="screen">
+    <param name="mInputTopic" value="/ars548/radar_rear/detections"/>
+    <param name="mVelocityThreshold" value="0.2"/>
+    <param name="mTimeOffset" value="0"/>
+  </node>
+
+</launch>

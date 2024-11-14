@@ -1,0 +1,24 @@
+radar_odometry:
+
+  # Topics
+  imuTopic: "/imu/data"
+  odomTopic: "/radar_odometry"
+  velocityOdomTopic: "/motion_segment_4d_front/ego_velocity"
+  # uncomment the following line if you want to use rear radar
+  rearVelocityOdomTopic: "/motion_segment_4d_rear/ego_velocity"
+
+  # Frames
+  lidarFrame: "imu"
+  baselinkFrame: "imu"
+  odometryFrame: "odom"
+  mapFrame: "map"
+
+  smootherLag: 2
+  useQRFactorization: false
+  # IMU Settings
+  imuAccNoise: 3.9939570888238808e-02
+  imuGyrNoise: 1.5636343949698187e-02
+  imuAccBiasN: 6.4356659353532566e-05
+  imuGyrBiasN: 3.5640318696367613e-05
+  imuGravity: 9.80511
+  imuRPYWeight: 0.01

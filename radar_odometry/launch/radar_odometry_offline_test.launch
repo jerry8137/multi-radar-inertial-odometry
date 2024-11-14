@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="project" default="radar_odometry" />
+  <rosparam param="/use_sim_time">
+      true
+  </rosparam>
+
+  <!-- Parameters -->
+  <rosparam file="$(find radar_odometry)/config/params.yaml" command="load" />
+
+  <include file="$(find radar_odometry)/launch/radar_odometry.launch" />
+
+  <include file="$(find motion_segment_4d)/launch/motion_segment.launch" />
+  <include file="$(find radar_odometry)/static_tf.launch" />
+
+</launch>
