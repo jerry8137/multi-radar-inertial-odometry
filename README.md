@@ -1,6 +1,6 @@
 # Multi-radar inertial odometry
 
-This is the implementaion of the paper "Multi-Radar Inertial Odometry for 3D State Estimation using mmWave Imaging Radar" tested with two 4d automotive radars.
+This is an unofficial implementaion of the paper "[Multi-Radar Inertial Odometry for 3D State Estimation using mmWave Imaging Radar](https://doi.org/10.48550/arXiv.2311.08608)" tested with two 4d automotive radars.
 
 [demo video](https://youtu.be/Nd2S2k3zKCg)
 
