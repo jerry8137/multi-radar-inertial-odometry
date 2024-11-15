@@ -6,7 +6,7 @@
 
   <maintainer email="jerry8137@gmail.com">Chun-Yu Hou</maintainer>
 
-  <license>ITRI</license>
+  <license>BSD</license>
 
   <depend>catkin</depend>
   <depend>pcl_conversions</depend>
